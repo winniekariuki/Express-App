@@ -18,13 +18,13 @@ app.get("/api/v1/users/:userId", (req, res) => {
   if (user.length) {
     res.status(200).send({
       success: true,
-      message: "users retrieved successfully",
+      message: "user retrieved successfully",
       users: user,
     })
   } else {
     return res.status(404).send({
       success: false,
-      message: "user does not exist",
+      message: `user with user id: ${userId} does not exist `,
     })
   }
 })
