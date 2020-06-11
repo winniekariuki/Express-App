@@ -1,5 +1,5 @@
 const request = require("supertest")
-import app from "../userApp"
+var app = require('../userApp')
 
 describe("Get Endpoint", () => {
   it("should get all users", async (done) => {

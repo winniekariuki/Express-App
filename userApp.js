@@ -1,5 +1,6 @@
-import express from "express"
-import db from "./db/db.json"
+var express = require('express')
+var db = require('./db/db.json')
+
 // Initialize  the express app
 const app = express()
 // get all users
@@ -34,4 +35,4 @@ const PORT = 5000
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
 })
-export default app
+module.exports= app
